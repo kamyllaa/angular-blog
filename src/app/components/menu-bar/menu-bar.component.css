@@ -1,0 +1,17 @@
+.container__menu-bar > ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container__menu-bar > ul > li{
+  margin-right: 10px;
+  list-style: none;
+}
+
+.container__menu-bar a i {
+  font-size: 20px;
+  color: #2332ff;
+  text-decoration: none;
+}
+
