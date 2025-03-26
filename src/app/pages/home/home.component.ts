@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'; /* trazer funcionalidades prontas de bibliotecas
 ou o proprio angular */
 
-@Component({ /* é um decorator qie transforma uma classe em um componente angular */
+@Component({ /* é um decorator que transforma uma classe em um componente angular */
   selector: 'app-home', /* define o nome da tag HTML para usar esse componente */
   templateUrl: './home.component.html', /* o arquivo HTML que mostra o visual do componente
   (como ele aparece para o usuário) */
@@ -17,10 +17,3 @@ export class HomeComponent implements OnInit { /* criando uma class chamada Home
   }
 
 }
-/* Esse código está criando um componente Angular chamado HomeComponent, com HTML e CSS próprios. Ele ainda não tem lógica dentro, mas está pronto pra você colocar coisas como:
-
-Mostrar uma mensagem de boas-vindas
-
-Buscar dados de uma API
-
-Exibir listas, formulários, etc. */
