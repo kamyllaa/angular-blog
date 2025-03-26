@@ -1,17 +1,39 @@
-.container__menu-bar > ul{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.container__menu-bar {
+  background-color: #fff0f5; /* Fundo rosa clarinho */
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #ffc0cb; /* Linha superior rosa bebê */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05); /* Sombra suave pra cima */
 }
 
-.container__menu-bar > ul > li{
-  margin-right: 10px;
+.container__menu-bar > ul {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones */
+  align-items: center;
+  gap: 20px; /* Espaço entre os itens */
+  padding: 0;
+  margin: 0;
+}
+
+.container__menu-bar > ul > li {
   list-style: none;
 }
 
+/* Estilo dos ícones */
 .container__menu-bar a i {
+  font-size: 24px;
+  color: #ff5f8a; /* Rosa docinho */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.container__menu-bar a:hover i {
+  transform: scale(1.2); /* Aumenta um pouco o ícone */
+  color: #d9366b; /* Um rosa mais escuro no hover */
+}
+/* Separadores (•) */
+.container__menu-bar span {
+  color: #ffc0cb;
   font-size: 20px;
-  color: #2332ff;
-  text-decoration: none;
 }
 

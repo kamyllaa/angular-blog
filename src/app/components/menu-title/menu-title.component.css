@@ -1,21 +1,21 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-
-.container__menu-title{
-  color: white;
+.container__menu-title {
+  background-color: #ffe4ec; /* Rosa claro estilo confeitaria */
+  padding: 20px 0; /* Espaço acima e abaixo do texto */
+  text-align: center; /* Centraliza todo o conteúdo */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra leve abaixo */
+  border-bottom: 2px solid #ffc0cb; /* Linha de divisão abaixo */
 }
 
-.container__menu-title > h1{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-family: "Delius", cursive;
-  display: flex;
-  justify-content: center;
+.container__menu-title > h1 {
+  margin: 0;
+  font-size: 36px;
+  font-family: 'Delius', cursive;
+  color: #ff5f8a; /* Rosa escuro para o texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra no texto */
 }
 
-.container__menu-title > hr{
-  margin-top: 10px;
-  margin-bottom: 5px;
+.container__menu-title > hr {
+  width: 60px;
+  margin: 10px auto;
+  border: 1px solid #ffb6c1; /* Rosa bebê */
 }

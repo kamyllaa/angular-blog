@@ -1,39 +1,57 @@
-.container__content{
-
+.container__content {
   width: 100%;
-  height: 100vh;
-
-  margin-top: 20px;
-
+  max-width: 900px; /* Limita a largura para centralizar o conteúdo */
+  margin: 40px auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  gap: 20px; /* Espaçamento entre os elementos */
 }
 
-.content__cover > img{
-  border:1px solid rgb(110, 110, 110);
-  border-radius: 5px;
-  width: 500px;
-  min-width: 500px;
-  height: 300px;
-  margin-top: 10px;
+/* Título da receita */
+.content__title h1 {
+  font-size: 2.2rem;
+  color: #ff5f8a;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
 }
 
-.content__description{
-  margin-top: 10px;
+/* Imagem da receita */
+.content__cover img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
-.content__description > p{
-
-  color: rgb(32, 32, 32);
+/* Bloco da descrição */
+.content__description {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Link "voltar" */
 .router-link {
-  display: inline-block; /* Para que a margem funcione corretamente */
-  margin-top: 50px;
+  margin-top: 30px;
+  background-color: #ffb6c1;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
-a {
-  font-size: 24px; /* Tamanho maior */
+.router-link:hover {
+  background-color: #ff82a9;
+  text-decoration: none;
 }

@@ -1,16 +1,40 @@
-.container__articles{
-  margin-top: 30px;
+.container__articles {
+  padding: 2rem; /* Espaço interno (pra afastar o conteúdo das bordas) */
+  max-width: 1200px; /* Largura máxima da área onde os cards vão aparecer */
+  margin: 40px auto; /* Espaço em cima/embaixo e centraliza no meio da tela */
+  display: flex; /* Ativa o layout flexível */
+  flex-direction: column; /* Coloca os itens um embaixo do outro */
+  gap: 40px; /* Espaço entre os blocos (card grande e os pequenos) */
+}
 
-  @media(min-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.articles__main {
+  margin-bottom: 40px; /* Espaço abaixo do card principal */
 }
 
 .articles__others {
-  display: flex;
-  flex-direction: row; /* Alinha os itens horizontalmente */
-  justify-content: space-between; /* Distribui o espaço entre os itens */
-  align-items: flex-start; /* Alinha os itens no topo */
+  display: flex; /* Coloca os cards pequenos lado a lado */
+  justify-content: space-between; /* Dá espaço igual entre eles */
+  flex-wrap: wrap; /* Permite quebrar de linha se a tela for pequena */
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.articles__others app-small-card {
+  flex: 1 1 30%; /* Cada card ocupa mais ou menos 30% do espaço */
+  max-width: 32%; /* Limita a largura pra garantir que caibam 3 */
+  transition: transform 0.3s ease; /* Suaviza a animação quando passar o mouse */
+}
+
+.articles__others app-small-card:hover {
+  transform: translateY(-5px); /* Quando passar o mouse, o card sobe um pouquinho */
+}
+
+@media (max-width: 768px) {
+  .articles__others {
+    flex-direction: column; /* Em telas pequenas, os cards ficam um embaixo do outro */
+    align-items: center; /* Centraliza os cards */
+  }
+
+  .articles__others app-small-card {
+    max-width: 100%; /* Ocupa toda a largura disponível */
+  }
 }

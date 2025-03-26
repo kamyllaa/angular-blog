@@ -1,14 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-*{
-  margin:0;
-  padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-color: #ffffff;
-  color:rgb(37, 37, 37);
-  font-family: 'Open Sans', sans-serif;
 }
 
-a{
+body {
+  background-color: #fff5f7;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+a {
   text-decoration: none;
+  color: #ff6f91;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff3f6e;
 }
